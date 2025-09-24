@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مدرسة الفرقان لتحفيظ القرآن</title>
+
+  <!-- خط تاجوال -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Tajawal', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #006400;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #004d00;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+    main {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      background-color: #006400;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* نموذج التسجيل */
+    form {
+      max-width: 500px;
+      margin: auto;
+      text-align: right;
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    form button {
+      margin-top: 20px;
+      background-color: #006400;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    form button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    /* جدول الحصص */
+    table {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      border-collapse: collapse;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    thead {
+      background-color: #004d00;
+      color: white;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* قسم البرامج */
+    #programs div.program-card {
+      background-color: #e6f2e6;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 0 5px #ccc;
+      margin-bottom: 20px;
+    }
+
+    #programs {
+      padding: 20px;
+    }
+    #programs h2 {
+      margin-bottom: 30px;
+    }
+    #programs div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* قسم التواصل */
+    #contact {
+      padding: 20px;
+    }
+    #contact p, #contact a {
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+    #contact strong {
+      font-weight: 700;
+    }
+    #contact .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline-block;
+      margin: 30px auto;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #contact .whatsapp-btn:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+    #contact iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 350px;
+      border: 0;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    /* تجاوب */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      #programs div.program-card {
+        width: 90%;
+      }
+      #contact iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>مدرسة الفرقان لتحفيظ القرآن</h1>
+    <p>نُعلّم القرآن ونعمل به</p>
+  </header>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#register">التسجيل</a>
+    <a href="#schedule">الجدول</a>
+    <a href="#programs">البرامج</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <main>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home">
+      <h2>مرحبًا بكم في مدرستنا</h2>
+      <p>نوفر بيئة قرآنية مباركة لحفظ وتدبر كتاب الله الكريم، بمناهج تعليمية مبسطة ومجموعة من المشايخ والمعلمين المؤهلين.</p>
+    </section>
+
+    <!-- نموذج التسجيل -->
+    <section id="register" style="margin-top: 60px;">
+      <h2>نموذج التسجيل</h2>
+      <form>
+        <label for="name">الاسم الكامل:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">العمر:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="phone">رقم الهاتف:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="program">اختر الدورة:</label>
+        <select id="program" name="program" required>
+          <option value="">-- اختر الدورة --</option>
+          <option value="تحفيظ للأطفال">تحفيظ للأطفال</option>
+          <option value="التجويد للمبتدئين">التجويد للمبتدئين</option>
+          <option value="دورة مراجعة">دورة مراجعة</option>
+        </select>
+
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
+
+    <!-- جدول الحصص -->
+    <section id="schedule" style="margin-top: 60px;">
+      <h2>جدول الحصص الأسبوعي</h2>
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>اليوم</th>
+              <th>الوقت</th>
+              <th>الدورة</th>
+              <th>الشيخ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>الأحد</td>
+              <td>16:00 - 17:30</td>
+              <td>تحفيظ للصغار</td>
+              <td>الشيخ عبد الرحمن</td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td>الإثنين</td>
+              <td>17:00 - 18:30</td>
+              <td>تجويد للمبتدئين</td>
+              <td>الشيخ محمود</td>
+            </tr>
+            <tr>
+              <td>الثلاثاء</td>
+              <td>16:00 - 17:30</td>
+              <td>دورة مراجعة</td>
+              <td>الشيخ يوسف</td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+              <td>الأربعاء</td>
+              <td>17:00 - 18:30</td>
+              <td>تحفيظ للكبار</td>
+              <td>الشيخ أحمد</td>
+            </tr>
+            <tr>
+              <td>الخميس</td>
+              <td>16:00 - 17:30</td>
+              <td>التجويد المتقدم</td>
+              <td>الشيخ علي</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- البرامج والدورات -->
+    <section id="programs" style="margin-top: 60px;">
+      <h2>البرامج والدورات التعليمية</h2>
+      <div>
+        <div class="program-card">
+          <h3>تحفيظ القرآن للصغار</h3>
+          <p>برنامج مخصص للأطفال من سن 6 إلى 12 سنة، لتأسيس الحفظ بشكل متدرج وبطريقة ممتعة.</p>
+        </div>
+        <div class="program-card">
+          <h3>دورة التجويد للمبتدئين</h3>
+          <p>تعلم أحكام التجويد الأساسية نظريًا وعمليًا، مع تطبيقات مباشرة على سور قصيرة.</p>
+        </

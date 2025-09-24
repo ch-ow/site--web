@@ -1,0 +1,216 @@
+
+     body {
+      font-family: 'Cairo', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+  }
+
+  header {
+      background-color: #0074D9;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+      position: relative;
+  }
+
+  header img {
+      position: absolute;
+      left: 20px;
+      top: 15px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+  }
+
+  nav {
+      background-color: #004080;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  nav a {
+      color: #FFA500;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+  }
+
+  nav a:hover {
+      background-color: #003366;
+      color: #fff;
+  }
+
+  .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #ffffff;
+  }
+
+  .hero h1 {
+      font-size: 28px;
+      color: #222;
+  }
+
+  .hero p {
+      font-size: 18px;
+      color: #444;
+  }
+
+  .btn {
+      background-color: #0074D9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+
+  .btn:hover {
+      background-color: #005fa3;
+  }
+
+  footer {
+      background-color: #00264d;
+      color: orange;
+      text-align: center;
+      padding: 10px;
+  }
+
+    
+  
+  /*دوران اللوغو*/
+  /*@keyframes sway {           
+    0% { transform: translate(0);}
+    25% { transform: translate(10px);}
+    50% { transform: translate(0);}
+    75% { transform: translate(-10px);}
+    100% { transform: translate(0);}
+  }*/
+  
+/*الشريط المتحرك*/
+ /*  .ticker-container {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+  }*/
+  
+ /* @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }*/
+  
+ 
+  
+  
+  /* تحسين شكل الروابط */
+/*a {
+transition: 0.3s;
+}
+a:hover {
+opacity: 0.8;
+}
+
+/* تحسين شكل الأزرار 
+button, .btn {
+transition: 0.3s;
+}
+button:hover, .btn:hover {
+transform: scale(1.05);
+}
+
+/* جعل التخطيط متجاوب */
+@media (max-width: 768px) {
+nav {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.program-card {
+  width: 90% !important;
+}
+
+iframe {
+  height: 250px !important;
+}
+}
+/* جدول الحصص */
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+thead {
+  background-color: #004d00;
+  color: white;
+}
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* قسم التواصل */
+#contact {
+  padding: 20px;
+}
+#contact p, #contact a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+#contact strong {
+  font-weight: 700;
+}
+#contact .whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin: 30px auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#contact .whatsapp-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+#contact iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 30px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدرسة أبي قاسم الهذلي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="top-bar" id="date-bar">
+      <!-- التاريخ سيُضاف تلقائيًا هنا -->
+    </div>
+  
+    <script>
+      // أسماء الشهور والأيام بالعربية
+      const months = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+      const days = ["الأحد", "الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+  
+      const today = new Date();
+      const dayName = days[today.getDay()];
+      const day = today.getDate();
+      const month = months[today.getMonth()];
+      const year = today.getFullYear();
+  
+      const fullDate = `${dayName}، ${day} ${month} ${year}`;
+  
+      document.getElementById("date-bar").textContent = fullDate;
+    </script>
+ 
+ <header>
+  <img src="./image/logo.jpg" alt="شعار المدرسة">
+  <h1>مدرسة أبي قاسم الهذلي للتجويد والقراءات</h1>
+  <p>خيركم من تعلم القرآن وعلمه</p>
+</header>
+    
+ 
+   <!-- 
+  <div class="ticker-container">
+      <div class="ticker">
+      <span> أخبار عاجلة: نهاية التسجيلات يكون يوم 30 سبتمبر |تسجيل الناشْة ذكور متاحة خبار عاجلة: نهاية التسجيلات يكون يوم 30 سبتمبر |تسجيل الناشْة ذكور متاحة </span>
+    </div>
+  </div>-->
+</header>  
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="inscription.html">التسجيل</a>
+    <a href="#schedule">الجدول</a>
+    <a href="time.html">البرامج</a>
+    <a href="tawasol.html">تواصل معنا</a>
+  </nav>
+
+  <section class="hero">
+    <h1>مرحباً بكم في مدرستنا</h1>
+    <p>نوفر بيئة قرآنية مباركة لحفظ وتدبر كتاب الله الكريم، بمناهج تعليمية مبسطة ومجموعة من المشايخ والمعلمين المؤهلين.</p>
+    <button class="btn">سجل الآن</button>
+</section>
+
+
+<footer>
+  مدرسة أبي قاسم  الهدلي للتجويد و القراءات - جميع الحقوق محفوظة © 2025
+</footer>
+</body>
+</html>
